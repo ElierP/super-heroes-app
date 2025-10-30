@@ -1,0 +1,33 @@
+{
+  "name": "marvel-heroes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ../src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElierP/marvel-heroes-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElierP/marvel-heroes-app/issues"
+  },
+  "homepage": "https://github.com/ElierP/marvel-heroes-app#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "typescript": "^5.9.3",
+    "nodemon": "^3.1.10",
+    "jest": "^30.2.0",
+    "@types/node": "^24.9.2"
+  }
+}
