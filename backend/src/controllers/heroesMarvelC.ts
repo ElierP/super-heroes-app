@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { Request, Response } from "express";
-import { json } from 'stream/consumers';
 
 const dataBase = path.join(__dirname, "../../data/db.json");
 
@@ -20,6 +19,6 @@ export const getHeroById = (req: Request, res: Response) =>{
     if(!hero){
         res.status(400).json({message: "Héroe no encontrado"})
     };
-     
+
     res.json(hero);
 };
