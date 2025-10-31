@@ -3,20 +3,32 @@ import app from "../src/app";
 
 describe("GET /api/heroes", () => {
   it("return a list of all heroes", async () => {
-    const response = await request(app).get("/api/heroes");
+    const response = await request(app).get("/api/heroes/");
     expect(response.status).toBe(200);
     expect(Array.isArray(response.body)).toBe(true);
   });
 
   it("should return a hero by ID", async () => {
-    const response = await request(app).get("/api/heroes/1");
+    const response = await request(app).get("/api/heroes/id/1");
     expect(response.status).toBe(200);
     expect(response.body.name).toBe("A-Bomb");
   });
 
    it("should return a hero by ID", async () => {
-    const response = await request(app).get("/api/heroes/6");
+    const response = await request(app).get("/api/heroes/id/6");
     expect(response.status).toBe(200);
     expect(response.body.name).toBe("Absorbing Man");
+  });
+
+   it("should return a hero by Name", async () => {
+    const response = await request(app).get("/api/heroes/name/Anti-Venom");
+    expect(response.status).toBe(200);
+    expect(response.body.id).toBe(34);
+  });
+
+   it("should return a hero by Name", async () => {
+    const response = await request(app).get("/api/heroes/name/Abraxas");
+    expect(response.status).toBe(200);
+    expect(response.body.id).toBe(5);
   });
 });
