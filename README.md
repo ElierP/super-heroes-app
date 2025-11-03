@@ -24,7 +24,7 @@ Permite listar varios héroes y consultar sus detalles de forma dinámica.
 ## 🧩 Estructura del proyecto
 
 ```
-super-heroes-app
+marvel-heroes-app
 ├──backend
 │   ├──data
 │   │   └──db.json

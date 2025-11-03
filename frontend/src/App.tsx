@@ -14,7 +14,7 @@ return (
       <main className="flex-grow-1 container py-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="api/heroes/id/:id" element={<HeroDetail />} />
+          <Route path="/heroes/id/:id" element={<HeroDetail />} />
           <Route path='/redirect' element={<Navigate to='/' />} />
         </Routes>
       </main>
