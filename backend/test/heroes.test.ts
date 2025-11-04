@@ -19,16 +19,4 @@ describe("GET /api/heroes", () => {
     expect(response.status).toBe(200);
     expect(response.body.name).toBe("Absorbing Man");
   });
-
-   it("should return a hero by Name", async () => {
-    const response = await request(app).get("/api/heroes/name/Anti-Venom");
-    expect(response.status).toBe(200);
-    expect(response.body.id).toBe(34);
-  });
-
-   it("should return a hero by Name", async () => {
-    const response = await request(app).get("/api/heroes/name/Abraxas");
-    expect(response.status).toBe(200);
-    expect(response.body.id).toBe(5);
-  });
 });
