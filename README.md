@@ -20,7 +20,7 @@ Permite listar héroes y consultar sus detalles individuales de forma dinámica,
 
 ## 🧩 Estructura del proyecto
 ```
-marvel-heroes-app
+super-heroes-app
 ├──backend
 │   ├──data
 │   │   └──db.json
@@ -56,8 +56,7 @@ marvel-heroes-app
 │   │   └──index.tsx
 │   ├──package-lock.json
 │   ├──package.json
-│   ├──tsconfig.json
-│   └──.gitignore
+│   └──tsconfig.json
 ├──package-lock.json
 ├──README.md
 └──.gitignore
