@@ -62,7 +62,8 @@ marvel-heroes-app
 ├──README.md
 └──.gitignore
 ```
-# ⚙️ Cómo ejecutar el proyecto
+# ⚙️ Cómo ejecutar el proyecto localmente
+El proyecto está dividido en **backend** y **frontend**, por lo que deben iniciarse en **dos terminales separadas**.
 
 ### 1️⃣ Clonar el repositorio
 ```
@@ -75,12 +76,14 @@ cd backend
 npm i
 npm run dev
 ```
+El servidor se iniciará en http://localhost:8090
 ### 3️⃣ Iniciar el Frontend
 ```
 cd ../frontend
 npm i
 npm start
 ```
+La aplicación se iniciará en http://localhost:3000 y se comunicará automáticamente con el backend.
 ## 🧠 Funcionalidades principales
 
 - 📜 Listado general de héroes (/) con imágenes y nombres.
