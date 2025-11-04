@@ -1,28 +1,24 @@
 # 🦸‍♂️ Super Heroes App
 
-Aplicación **Full Stack JavaScript** desarrollada como prueba técnica.  
-Permite listar varios héroes y consultar sus detalles de forma dinámica.
+Aplicación Full Stack JavaScript desarrollada como prueba técnica.
+Permite listar héroes y consultar sus detalles individuales de forma dinámica, conectando un backend en Node.js + Express con un frontend en React + TypeScript.
 
----
+# 🚀 Tecnologías utilizadas
 
-## 🚀 Tecnologías utilizadas
-
-### Backend
+## 🧱 Backend
 - Node.js + Express
 - TypeScript
-- Jest (para pruebas unitarias)
-- Nodemon (para desarrollo)
+- Jest (pruebas unitarias)
+- Nodemon (modo desarrollo)
 
-### Frontend
+## 🎨 Frontend
 - React + TypeScript
-- React Router DOM
-- Axios
-- Bootstrap 5
-
----
+- React Router DOM (ruteo entre vistas)
+- Axios (consumo del backend)
+- Bootstrap 5 (estilos y diseño responsivo)
+- LocalStorage (persistencia offline básica)
 
 ## 🧩 Estructura del proyecto
-
 ```
 marvel-heroes-app
 ├──backend
@@ -66,36 +62,43 @@ marvel-heroes-app
 ├──README.md
 └──.gitignore
 ```
-
-
----
-
-## ⚙️ Cómo ejecutar el proyecto
+# ⚙️ Cómo ejecutar el proyecto
 
 ### 1️⃣ Clonar el repositorio
-
-```bash
-git clone https://github.com/tu-usuario/marvel-heroes-app.git
+```git
+git clone https://github.com/ElierP/super-heroes-app.git
 cd super-heroes-app
-
+```
+### 2️⃣ Iniciar el Backend
+```
 cd backend
-npm install
+npm i
 npm run dev
-
-
+```
+### 3️⃣ Iniciar el Frontend
+```
 cd ../frontend
-npm install
+npm i
 npm start
+```
+## 🧠 Funcionalidades principales
 
-🧠 Funcionalidades
+- 📜 Listado general de héroes (/) con imágenes y nombres.
+- 🔍 Detalle individual de cada héroe (/heroes/id/:id), mostrando información biográfica y de atributos.
+- 🔄 Navegación sin recargar gracias a React Router.
+- 📱 Diseño responsivo implementado con Bootstrap 5.
+- 💾 Persistencia local mediante localStorage:
+    - Si no hay conexión a internet, la app muestra los datos almacenados localmente.
 
-Listado de héroes (/)
-Página de detalle (/heroes/:id)
-Navegación entre páginas sin recargar
-Estilos responsivos (Bootstrap)
-
-🧪 Pruebas unitarias
-
-Ejecutar las pruebas del backend:
+## 🧪 Pruebas unitarias
+```
 cd backend
-npm test
+npm run test
+```
+# 🧑‍💻 Autor
+
+Elier Efren Mata Piña
+
+Prueba técnica — Desarrollador Full Stack JavaScript
+
+GitHub: https://github.com/ElierP
