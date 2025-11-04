@@ -1,3 +1,37 @@
-# Node dependencies
+# ==============================
+# 🗂️ General
+# ==============================
+.DS_Store
+.env
+.env.*.local
+*.log
+
+# ==============================
+# 📦 Dependencies
+# ==============================
+node_modules/
 frontend/node_modules/
 backend/node_modules/
+
+# ==============================
+# 🧪 Tests & Coverage
+# ==============================
+coverage/
+*.lcov
+
+# ==============================
+# 🏗️ Build Output
+# ==============================
+frontend/build/
+backend/dist/
+
+# ==============================
+# ⚙️ Misc
+# ==============================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
