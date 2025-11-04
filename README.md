@@ -65,7 +65,7 @@ marvel-heroes-app
 # ⚙️ Cómo ejecutar el proyecto
 
 ### 1️⃣ Clonar el repositorio
-```git
+```
 git clone https://github.com/ElierP/super-heroes-app.git
 cd super-heroes-app
 ```
