@@ -72,14 +72,14 @@ cd super-heroes-app
 ```
 ### 2️⃣ Iniciar el Backend
 ```
-cd backend
+cd ../super-heroes-app/backend
 npm i
 npm run dev
 ```
 El servidor se iniciará en http://localhost:8090
 ### 3️⃣ Iniciar el Frontend
 ```
-cd ../frontend
+cd ../super-heroes-app/frontend
 npm i
 npm start
 ```
